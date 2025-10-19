@@ -1,0 +1,4 @@
+"customerid","firstname","lastname","country","score"
+1,"Jossef                                            ","Goldberg                                          ","Germany                                           ",350
+2,"Kevin                                             ","Brown                                             ","USA                                               ",900
+3,"Mary                                              ",NULL,"USA                                               ",750
