@@ -1,0 +1,97 @@
+--Retrieve all customer Data
+Select * 
+from customers
+
+--Retrieve all order Data
+Select * 
+from orders
+
+--Retrieve each customer's name, country and score
+Select
+	firstname,
+	country,
+	score
+from customers
+
+-- Retrieve customers with a score not equal to 0
+Select *
+from customers 
+where score <>0
+
+--retrieve customers from Germany
+Select *
+from customers 
+where country = 'Germany'
+
+-- Retrieve the name and country of customers from Germany
+Select
+    firstname,
+    country
+from customers
+where country = 'Germany'
+
+--Retrieve all customers and sort the results by the highest score first.
+Select *
+from customers
+order by score Desc
+
+--Retrieve all customers and sort the results by the lowest score first.
+Select *
+from customers 
+order by score ASC
+
+--Retrieve all customers and sort the results by the country.
+Select *
+from customers order by country
+
+--Retrieve all customers and sort the results by the country and then by the highest score
+Select *
+from customers 
+order by country ASC, score DESC
+
+--Retrieve the name, country, and score of customers whose score is not equal to 0 and sort the results by the highest score first. 
+select
+	firstname,
+	country,
+	score
+from customers 
+where score <>0
+order by score DESC
+
+--Find the total score for each country
+select
+	country,
+	sum(score) as total_score
+from customers
+group by country
+
+--Find the total score and total number of customers for each country
+Select
+	country,
+	sum(score) as total_score,
+	count(customerid) as total_cusstomers
+from customers 
+group by country
+
+--Find the average score for each country and return only those countries with an average score greater than 450
+Select 
+	country,
+	AVG(score) as avg_score
+from customers 
+group by country
+having avg(score) > 450
+
+-- Return Unique list of all firstname and lastnames
+Select Distinct firstname, lastname
+from customers
+
+--Retrieve only 3 Customers
+Select *
+from customers
+limit 3
+
+-----Retrieve the Top 4 Customers with the Highest Scores
+select *
+from customers
+order by score ASC
+limit 4
