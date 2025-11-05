@@ -1,0 +1,12 @@
+"productid","product","category","orderid","quantity","sales"
+103,"Socks","Clothing",NULL,NULL,NULL
+101,"Bottle","Accessories",8,3,"90"
+105,"Gloves","Clothing",4,2,"60"
+104,"Caps","Clothing",6,2,"50"
+101,"Bottle","Accessories",3,2,"20"
+102,"Tire","Accessories",7,2,"30"
+101,"Bottle","Accessories",9,2,"20"
+104,"Caps","Clothing",5,1,"25"
+102,"Tire","Accessories",2,1,"15"
+101,"Bottle","Accessories",1,1,"10"
+102,"Tire","Accessories",10,0,"60"

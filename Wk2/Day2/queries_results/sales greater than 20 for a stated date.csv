@@ -1,0 +1,5 @@
+"orderid","productid","customerid","salespersonid","orderdate","shipdate","orderstatus","shipaddress","billaddress","quantity","sales","creationtime"
+1,101,2,3,"2025-01-01","2025-01-05","Delivered","9833 Mt. Dias Blv.","1226 Shoe St.",1,"10","2025-01-01 12:34:56"
+2,102,3,3,"2025-01-05","2025-01-10","Shipped","250 Race Court",NULL,1,"15","2025-01-05 23:22:04"
+3,101,1,5,"2025-01-10","2025-01-25","Delivered","8157 W. Book","8157 W. Book",2,"20","2025-01-10 18:24:08"
+9,101,2,3,"2025-03-10","2025-03-15","Shipped","3768 Door Way",NULL,2,"20","2025-03-10 12:59:04"
